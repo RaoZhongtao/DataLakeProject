@@ -1,0 +1,4 @@
+2025-03-11 14:56:08,007 - INFO - Successfully generated 100000 records to data/synthetic_data.avro
+2025-03-11 14:56:12,284 - INFO - Validation Results: [{'name': 'user_id_not_null', 'failed_records': 0, 'message': 'user_id must not be null'}, {'name': 'rating_range', 'failed_records': 0, 'message': 'rating must be between 1 and 5'}, {'name': 'timestamp_not_null', 'failed_records': 0, 'message': 'timestamp must not be null'}]
+2025-03-11 14:56:16,275 - INFO - Performance Results: {'load_time': 0.0858464241027832, 'query_results': [{'query_name': 'Count by event_type', 'execution_time': 1.3576710224151611}, {'query_name': 'Average rating by content', 'execution_time': 1.219083309173584}, {'query_name': 'Daily active users', 'execution_time': 1.3265650272369385}]}
+2025-03-11 14:56:16,590 - INFO - Closing down clientserver connection

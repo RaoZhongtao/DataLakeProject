@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "UserInteraction",
+  "namespace": "com.datalake.events",
+  "fields": [
+    {"name": "user_id", "type": "string"},
+    {"name": "event_type", "type": {"type": "enum", "name": "EventType", "symbols": ["CLICK", "RATING", "VIEW"]}},
+    {"name": "timestamp", "type": "long", "logicalType": "timestamp-millis"},
+    {"name": "content_id", "type": "string"},
+    {"name": "rating", "type": ["null", "int"], "default": null},
+    {"name": "watch_time", "type": ["null", "long"], "default": null},
+    {"name": "device_type", "type": ["null", "string"], "default": null}
+  ]
+}
